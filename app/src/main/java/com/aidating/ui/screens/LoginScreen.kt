@@ -103,8 +103,7 @@ fun LoginScreen(onLoggedIn: () -> Unit) {
                 .fillMaxWidth(0.4f)
                 .height(4.dp)
                 .clip(RoundedCornerShape(100.dp))
-                .background(Color(0xFF0A0A0A).copy(alpha = 0.9f)),
-            contentAlignment = Alignment.Center
+                .background(Color(0xFF0A0A0A).copy(alpha = 0.9f))
         )
         Spacer(modifier = Modifier.height(20.dp))
     }

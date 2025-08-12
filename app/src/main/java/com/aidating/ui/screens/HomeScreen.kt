@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
@@ -63,12 +64,7 @@ private fun SwipeCard() {
             contentScale = ContentScale.Crop,
             modifier = Modifier
                 .padding(16.dp)
-        )
-        // Apply offset via layout
-        androidx.compose.foundation.layout.Box(modifier = Modifier
-            .matchParentSize()
-            .padding(0.dp)
-            .offset { IntOffset(offsetX.value.roundToInt(), offsetY.value.roundToInt()) }
+                .offset { IntOffset(offsetX.value.roundToInt(), offsetY.value.roundToInt()) }
         )
     }
 }
