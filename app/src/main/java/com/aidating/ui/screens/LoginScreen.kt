@@ -87,6 +87,15 @@ fun LoginScreen(onLoggedIn: () -> Unit) {
             modifier = Modifier.fillMaxWidth()
         )
 
+        Spacer(modifier = Modifier.height(12.dp))
+        Text(
+            text = "Политика конфиденциальности",
+            color = Color(0xFF007AFF),
+            style = MaterialTheme.typography.bodySmall,
+            textAlign = TextAlign.Center,
+            modifier = Modifier.fillMaxWidth()
+        )
+
         // Нижний индикатор (Home Indicator)
         Spacer(modifier = Modifier.height(12.dp))
         Box(
